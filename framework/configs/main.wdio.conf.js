@@ -15,9 +15,6 @@ export const mainConfig = {
   connectionRetryCount: 3,
   reporters: ["spec"],
   baseUrl: "https://demo-opencart.com/",
-  Before: function () {
-    browser.url(this.baseUrl);
-  },
 
   onPrepare: function () {
     fs.ensureDir(downloadDir);
