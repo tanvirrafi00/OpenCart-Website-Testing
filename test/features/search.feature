@@ -7,9 +7,9 @@ Feature: Search Funtionality
 
     Scenario:TC_SF_001-Validate searching with an existing Product Name
 
-        When I type "iMac" on the search field
-        And  I Click on the search icon
-        Then Searched product should be displayed in the search results
+        When I type iMac on the search field
+        And  I Click on the search button
+        Then I should see iMac in the search results
 
 
 
