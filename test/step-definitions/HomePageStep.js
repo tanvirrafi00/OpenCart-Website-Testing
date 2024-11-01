@@ -5,16 +5,13 @@ import HomePage from "../page-objects/HomePage.js";
 
 Given(/^I am on the Home page$/, async () => {
   await Browser.openUrl(mainConfig.baseUrl);
+  console.log("I am on the home page");
 });
 
-When(/^I type (.*) on the search field$/, async (value) => {
+When(/^I type "(.*)" on the search field$/, async (value) => {
   await HomePage.setValueInSearchField(value);
 });
 
 When(/^I Click on the search button$/, async () => {
   await HomePage.clickSearchButton();
-});
-
-Then(/^Searched product should be displayed in the search results$/, () => {
-  return true;
 });
