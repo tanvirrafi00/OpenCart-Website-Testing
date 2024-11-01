@@ -16,6 +16,7 @@ export const config = {
           outputDir: "allure-results",
           disableWebdriverStepsReporting: true,
           disableWebdriverScreenshotsReporting: true,
+          disableHooks: true,
         },
       ],
     ],
