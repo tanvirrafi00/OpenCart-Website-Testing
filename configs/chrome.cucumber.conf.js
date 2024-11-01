@@ -6,6 +6,7 @@ export const config = {
     framework: "cucumber",
     cucumberOpts: {
       require: ["./test/step-definitions/**/*.js"],
+      tags: "",
     },
     reporters: [
       "spec",
