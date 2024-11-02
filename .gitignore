@@ -132,3 +132,5 @@ dist
 # Ignore results from allure report 
 allure-results/
 allure-report/
+
+browserstack.err
