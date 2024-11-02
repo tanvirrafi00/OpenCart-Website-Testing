@@ -1,6 +1,7 @@
 import { assert } from "chai";
 import LoginPage from "../page-objects/LoginPage.js";
 import { Then, When } from "@wdio/cucumber-framework";
+import Browser from "../../framework/browser/Browser.js";
 
 Then(/^I should be on the login page$/, async () => {
   assert.isTrue(await LoginPage.isPageOpened(), "Login page is not opened");
@@ -12,4 +13,5 @@ When(/^i type "(.*)" as a email and "(.*)" as a password$/, async (email, passwo
 
 When(/^I click on the login button$/, async () => {
   await LoginPage.clickLoginButton();
+  await Browser.waitForDelay(3000);
 });
