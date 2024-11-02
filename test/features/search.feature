@@ -19,6 +19,7 @@ Feature: Search Funtionality
     And I Click on the search button
     Then "There is no product that matches the search criteria." should be displayed in the search results
 
+  @login
   Scenario: TC_SF_004-Validate searching for a product after login to the Application
     When I click on the account option from the menu
     And I click on the login
