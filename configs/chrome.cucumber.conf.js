@@ -52,14 +52,6 @@ export const config = {
         },
       },
       {
-        browserName: "Chromium",
-        "bstack:options": {
-          deviceName: "iPhone 13",
-          osVersion: "15",
-          deviceOrientation: "portrait",
-        },
-      },
-      {
         browserName: "chrome",
         "goog:chromeOptions": {
           prefs: {
