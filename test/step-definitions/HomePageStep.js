@@ -15,3 +15,11 @@ When(/^I type "(.*)" on the search field$/, async (value) => {
 When(/^I Click on the search button$/, async () => {
   await HomePage.clickSearchButton();
 });
+
+When(/^I click on the account option from the menu$/, async () => {
+  await HomePage.clickMyAccount();
+});
+
+When(/^I click on the login$/, async () => {
+  await HomePage.clickLogin();
+});
