@@ -25,6 +25,11 @@ Feature: Search Funtionality
 
     @login
     Scenario:TC_SF_004-Validate searching for a product after login to the Application
+        When I click on the account option from the menu
+        And I click on the login
+        Then I should be on the login page
+        When i type "abc01@gmail.com" as a email and "1234567" as a password
+        And  I click on the login button
         When I type "iMac" on the search field
         And  I Click on the search button
         Then I should see "iMac" in the search results
